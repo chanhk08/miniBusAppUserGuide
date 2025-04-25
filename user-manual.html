@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minibus Mobile App Getting Started Guide</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #2e7d32;
+            /* Green minibus color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #fbc02d;
+            /* Yellow accent */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav {
+            background: #fbc02d;
+            /* Yellow minibus stripe */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #2e7d32;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #fbc02d;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        .content h3 {
+            color: #2e7d32;
+            margin-top: 15px;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .content ul,
+        .content ol {
+            margin: 10px 0 20px 20px;
+        }
+
+        .content ul li,
+        .content ol li {
+            margin: 5px 0;
+        }
+
+        .screenshot-placeholder {
+            background: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .toc {
+            background: #e0e0e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .toc h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .toc ul li {
+            margin: 5px 0;
+        }
+
+        .toc ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .toc ul li a:hover {
+            color: #2e7d32;
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        .minibus-decor {
+            background: url('https://via.placeholder.com/50?text=Minibus') repeat-x;
+            height: 50px;
+            border-top: 2px solid #2e7d32;
+            border-bottom: 2px solid #2e7d32;
+            margin: 20px 0;
+        }
+
+        .tip-box {
+            background: #e8f5e9;
+            border-left: 4px solid #2e7d32;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                margin: 10px;
+            }
+        }
+
+        .screenshot {
+            display: block;
+            max-width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>User Guide</h1>
+            <p>Step-by-Step Instructions to Set Up and Use the App</p>
+        </div>
+        <div class="nav">
+            <a href="index.html#introduction">Introduction</a>
+            <a href="index.html#getting-started">Getting Started</a>
+            <a href="index.html#features">Features</a>
+            <a href="user-manual.html">User Manual</a>
+            <a href="index.html#faq">FAQ</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="minibus-decor"></div>
+        <div class="content">
+            <section id="getting-started-guide">
+                <h2>Getting Started Guide</h2>
+                <p>The Minibus Mobile App simplifies commuting on Hong Kong’s green minibuses with features like QR code
+                    boarding, drop-off requests, and location sharing. Designed for locals, tourists, and passengers
+                    with special needs, it offers a multilingual, user-friendly interface. This guide walks you through
+                    setting up and using the app’s core features.</p>
+                <div class="tip-box">
+                    <p><strong>Note:</strong> The app requires internet and location services for full functionality.
+                        During peak hours or in areas with poor signal, features like QR code scanning may experience
+                        delays. Ensure your device has sufficient battery.</p>
+                </div>
+
+                <div class="toc">
+                    <h3>Table of Contents</h3>
+                    <ul>
+                        <li><a href="#navigate-home">1. Navigating the Home Page</a></li>
+                        <li><a href="#login">2. Logging In</a></li>
+                        <li><a href="#qr-boarding">3. Using QR Code for Boarding</a></li>
+                        <li><a href="#drop-off">4. Requesting a Drop-Off</a></li>
+                        <li><a href="#manage-settings">5. Managing Settings</a></li>
+                        <li><a href="#emergency-contacts">6. Managing Emergency Contacts</a></li>
+                        <li><a href="#share-location">7. Monitoring and Sharing Location</a></li>
+                        <li><a href="#feedback">8. Providing Feedback</a></li>
+                        <li><a href="#troubleshooting">9. Basic Troubleshooting</a></li>
+                    </ul>
+                </div>
+
+                <section id="navigate-home">
+                    <h3>1. Navigating the Home Page</h3>
+                    <p>The Home Page is your hub for viewing minibus routes and accessing features.</p>
+                    <ol>
+                        <li>Open the app to view the Home Page.</li>
+                        <li>Check the nearest route and its distance (e.g., “Clear Water Bay Road, 0.74 km away”).</li>
+                        <li>Note the estimated time for the next minibus (e.g., “Next: 21 min”).</li>
+                        <li>Use the bottom navigation bar to switch to Home, Bookmark, or Settings.</li>
+                    </ol>
+                    <p><strong>Accessibility:</strong> Enable audio descriptions for route details. Multilingual route
+                        names assist tourists.</p>
+                    <div class="screenshot-placeholder">[Screenshot: Home Page with route details and navigation bar.]
+                    </div>
+                    <img src="images/home.png" class="screenshot">
+                    <img src="images/home_1.png" class="screenshot">
+
+                </section>
+
+                <section id="login">
+                    <h3>2. Logging In</h3>
+                    <p>Log in to access restricted features like QR code boarding.</p>
+                    <ol>
+                        <li>Launch the app and attempt to access a restricted feature (e.g., QR Code).</li>
+                        <li>When prompted with “Login Required,” tap “Login.”</li>
+                        <li>Enter your registered email (e.g., “john@example.com”) and password.</li>
+                        <li>Tap “Login” to continue.</li>
+                    </ol>
+                    <p><strong>Accessibility:</strong> Screen readers can guide visually impaired users through the
+                        login form. Multilingual prompts support non-local users.</p>
+                    <div class="screenshot-placeholder">[Screenshot: Login screen with email and password fields.]</div>
+                    <img src="images/login.png" class="screenshot">
+                    <img src="images/login_1.png" class="screenshot">
+                </section>
+
+
+
+                <section id="qr-boarding">
+                    <h3>3. Using QR Code for Boarding</h3>
+                    <p>Board a minibus by scanning a QR code, ideal for seamless commuting.</p>
+                    <ol>
+                        <li>Log in to your account.</li>
+                        <li>From the Home Page, tap “QR Code.”</li>
+                        <li>Allow camera access when prompted.</li>
+                        <li>Scan the QR code inside the minibus (e.g., for “Yau Yat Tsuen to Shek Kip Mei Station, Route
+                            ID: 2005687”).</li>
+                        <li>Verify the route details (origin and destination) on the screen.</li>
+                        <li>Tap “Enter The Bus” to confirm boarding.</li>
+                    </ol>
+                    <p><strong>Accessibility:</strong> This feature supports mute or speech-impaired users by enabling
+                        digital boarding. Screen readers confirm route details.</p>
+                    <div class="screenshot-placeholder">[Screenshot: QR code scanning and route verification screen.]
+                    </div>
+                    <img src="images/qrcode.png" class="screenshot">
+                    <img src="images/qrcode_1.png" class="screenshot">
+                    
+                </section>
+
+                <section id="drop-off">
+                    <h3>4. Requesting a Drop-Off</h3>
+                    <p>Request a drop-off without verbal communication while on the minibus.</p>
+                    <ol>
+                        <li>While on the minibus, access the “QR Code” section.</li>
+                        <li>View the current route details (e.g., “41A, 23 Sha On St, Ma On Shan”).</li>
+                        <li>Tap the “Drop Off” button to request a stop.</li>
+                        <li>After processing, see “Thank you for riding with us!” and tap “Back to Home.”</li>
+                    </ol>
+                    <p><strong>Accessibility:</strong> Silent drop-off requests aid mute or speech-impaired users.
+                        Multilingual prompts assist tourists.</p>
+                    <div class="tip-box">
+                        <p><strong>Note:</strong> If you scan another QR code while on a bus, the app will display: “You
+                            are already on a bus. Please get off before scanning another QR code.”</p>
+                    </div>
+                    <div class="screenshot-placeholder">[Screenshot: Drop-off request screen with route details.]</div>
+                    <img src="images/qrcode.png" class="screenshot">
+                    <img src="images/qrcode_1.png" class="screenshot">
+                    <img src="images/qrcode_2.png" class="screenshot">
+                </section>
+
+                <section id="manage-settings">
+                    <h3>5. Managing Settings</h3>
+                    <p>Customize your app experience through the Settings page.</p>
+                    <ol>
+                        <li>From the Home Page, tap “Settings” in the bottom navigation bar.</li>
+                        <li>Explore options: Notifications, Language, Help Center, About Us, Emergency Contact.</li>
+                        <li>To adjust notifications, tap “Notification” and enable/disable as needed.</li>
+                        <li>To change language, tap “Change the display languages” and select your preference (e.g.,
+                            English, Chinese).</li>
+                        <li>Access the Help Center or About Us for support or app details.</li>
+                        <li>To log out, tap “Logout” and confirm.</li>
+                    </ol>
+                    <p><strong>Accessibility:</strong> Screen readers describe settings options. Multilingual support
+                        ensures ease for all users.</p>
+                    <div class="screenshot-placeholder">[Screenshot: Settings page with options and language selection.]
+                    </div>
+                    <img src="images/setting.png" class="screenshot">
+                    
+                </section>
+
+                <section id="emergency-contacts">
+                    <h3>6. Managing Emergency Contacts</h3>
+                    <p>Add, edit, or delete emergency contacts for safety notifications.</p>
+                    <ul>
+                        <li><strong>Adding a Contact:</strong>
+                            <ol>
+                                <li>From Settings, tap “Emergency Contacts.”</li>
+                                <li>Tap “Add contact.”</li>
+                                <li>Enter the name (optional), country code (e.g., “+852”), and phone number (e.g.,
+                                    “999”).</li>
+                                <li>Tap “Save.”</li>
+                                <li>See “New contact added successfully” and tap “OK.”</li>
+                            </ol>
+                        </li>
+                        <li><strong>Editing a Contact:</strong>
+                            <ol>
+                                <li>In Emergency Contacts, tap “Edit” next to a contact (e.g., “Po, +852999”).</li>
+                                <li>Update name, country code, or phone number.</li>
+                                <li>Tap “Save” or “Cancel.”</li>
+                            </ol>
+                        </li>
+                        <li><strong>Deleting a Contact:</strong>
+                            <ol>
+                                <li>Tap “Delete” next to a contact.</li>
+                                <li>Confirm by tapping “Delete” in the prompt or “Cancel” to keep it.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p><strong>Accessibility:</strong> Screen readers guide users through contact management. Voice
+                        dictation can assist with entering details.</p>
+                    <div class="screenshot-placeholder">[Screenshot: Emergency Contacts page with add/edit/delete
+                        options.]</div>
+                        <img src="images/contact.png" class="screenshot">
+                    <img src="images/contact_1.png" class="screenshot">
+                    <img src="images/contact_2.png" class="screenshot">
+                    <img src="images/contact_3.png" class="screenshot">
+                </section>
+
+                <section id="share-location">
+                    <h3>7. Monitoring and Sharing Location</h3>
+                    <p>Monitor your location and share it with emergency contacts for safety.</p>
+                    <ol>
+                        <li>Enable location services when prompted on the Home Page.</li>
+                        <li>View your current location and nearby routes.</li>
+                        <li>Ensure emergency contacts are added in Settings.</li>
+                        <li>In an emergency, the app automatically shares your location with contacts if permissions are
+                            granted.</li>
+                    </ol>
+                    <p><strong>Accessibility:</strong> Audio descriptions can announce location updates. Multilingual
+                        prompts guide setup.</p>
+                    <div class="screenshot-placeholder">[Screenshot: Home Page with location enabled and nearby routes.]
+                    </div>
+                    <img src="images/map.png" class="screenshot">
+                </section>
+
+                <section id="feedback">
+                    <h3>8. Providing Feedback</h3>
+                    <p>Share feedback to improve the app experience.</p>
+                    <ol>
+                        <li>From the Home Page or Settings, navigate to the Feedback section.</li>
+                        <li>Read guidelines recommending travel date, time, boarding location, and vehicle details.</li>
+                        <li>Tap “Got it” to proceed.</li>
+                        <li>Enter Route Number (e.g., “2A”) and Vehicle Number (e.g., “AB1234”).</li>
+                        <li>Optionally, add travel date/time (e.g., “July 5th, 09:15-09:30”) and boarding location
+                            (e.g., “Rainbow Village”).</li>
+                        <li>Tap “Next” to submit.</li>
+                    </ol>
+                    <p><strong>Accessibility:</strong> Screen readers read guidelines and form fields. Voice dictation
+                        can assist with input.</p>
+                    <div class="screenshot-placeholder">[Screenshot: Feedback form with route and vehicle fields.]</div>
+                    <img src="images/feedback.png" class="screenshot">
+                </section>
+
+                <section id="troubleshooting">
+                    <h3>9. Basic Troubleshooting</h3>
+                    <p>Resolve common issues for a smooth experience.</p>
+                    <ul>
+                        <li><strong>QR Code Scanning Issues:</strong> Ensure camera permissions are granted. If you see
+                            “You are already on a bus,” request a drop-off before scanning another QR code.</li>
+                        <li><strong>Location Services Errors:</strong> Enable location services in your device settings.
+                            In areas with poor signal, updates may delay.</li>
+                        <li><strong>Login Failures:</strong> Verify your email and password. Use “Forgot Password” to
+                            reset if needed.</li>
+                        <li><strong>Battery Drain:</strong> Continuous location tracking may increase battery usage.
+                            Lower screen brightness or disable tracking when not needed.</li>
+                        <li><strong>Need Help?</strong> Access the Help Center in Settings or contact support via the
+                            “Contact” section.</li>
+                    </ul>
+                    <p><strong>Note:</strong> For persistent issues, use the Emergency Contact feature for urgent
+                        support.</p>
+                    <div class="screenshot-placeholder">[Screenshot: Help Center with support options.]</div>
+                </section>
+            </section>
+        </div>
+        <div class="footer">
+            <p>© 2025 MinibusAppTeam. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

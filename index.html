@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minibus Mobile App User Guide</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #2e7d32; /* Green minibus color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #fbc02d; /* Yellow accent */
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .nav {
+            background: #fbc02d; /* Yellow minibus stripe */
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #2e7d32;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #fbc02d;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: square;
+            margin: 10px 0 20px 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        .sidebar {
+            background: #e0e0e0;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .sidebar h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+        .minibus-decor {
+            background: url('https://via.placeholder.com/50?text=Minibus') repeat-x;
+            height: 50px;
+            border-top: 2px solid #2e7d32;
+            border-bottom: 2px solid #2e7d32;
+            margin: 20px 0;
+        }
+        .tip-box {
+            background: #e8f5e9;
+            border-left: 4px solid #2e7d32;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                margin: 10px;
+            }
+        }
+        .content h3 {
+            color: #2e7d32;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Minibus Mobile App </h1>
+            <p>Enhancing Hong Kong's Green Minibus Experience</p>
+        </div>
+        <div class="nav">
+            <a href="#introduction">Introduction</a>
+            <a href="#getting-started">Getting Started</a>
+            <a href="#features">Features</a>
+            <a href="user-manual.html">User Manual</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="minibus-decor"></div>
+        <div class="content">
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to the Minibus Mobile App, developed by students of the Hong Kong Institute of Vocational Education (HKIVE) as part of a final year project for the Higher Diploma in Software Engineering (2024/2025). This cross-platform application, compatible with iOS and Android, aims to revolutionize Hong Kong’s green minibus system by providing real-time tracking, smart booking, and enhanced accessibility for passengers, including tourists and those with special needs. The app addresses key issues such as unclear stop signage, inconsistent service quality, and limited information for non-local users, ensuring a seamless and inclusive transportation experience.</p>
+            </section>
+            <section id="getting-started">
+                <h2>Getting Started</h2>
+                <div class="tip-box">
+                    <p><strong>Note:</strong> Ensure your mobile device has a stable internet connection and is on the same Wi-Fi network as the computer running the app’s server. Contact support via the app’s “Contact” section if you encounter issues.</p>
+                </div>
+                <h3>Installing the App</h3>
+                <p>To begin using the Minibus Mobile App, follow these steps:</p>
+                <ol>
+                    <li>Download the <strong>Expo Go</strong> app from the iOS App Store (iPhone/iPad) or Google Play Store (Android).</li>
+                    <li>Open Expo Go on your mobile device.</li>
+                    <li>Scan the QR code provided by the Minibus Mobile App team (available at <a href="https://github.com/chanhk08/miniBusApp">github.com/chanhk08/miniBusApp</a>) using Expo Go’s camera.</li>
+                    <li>Ensure your mobile device is connected to the same Wi-Fi network as the computer running the app’s server.</li>
+                    <li>Wait for the app to load in Expo Go (may take a minute).</li>
+                </ol>
+                <p><strong>Accessibility:</strong> For visually impaired users, ask a sighted assistant to scan the QR code or use the URL provided with the QR code. Expo Go’s interface supports screen readers for navigation.</p>
+                
+                
+            </section>
+            <div class="sidebar">
+                <h3>Quick Tips</h3>
+                <p>Maximize your experience with these tips:</p>
+                <ul>
+                    <li>Enable notifications to receive real-time updates on minibus arrivals and seat availability.</li>
+                    <li>Use the QR code scanner inside the minibus to send a digital "Get Off" request, especially if you’re unfamiliar with the route.</li>
+                    <li>Check the multilingual interface settings to switch to your preferred language for easier navigation.</li>
+                    <li>Use the lost item reporting feature immediately if you misplace something, including details like travel date and vehicle number.</li>
+                </ul>
+            </div>
+            <section id="features">
+                <h2>Key Features</h2>
+                <p>The Minibus Mobile App offers the following functionalities to enhance your travel experience:</p>
+                <ul>
+                    <li><strong>Real-Time Tracking:</strong> Monitor minibus locations with GPS updates every 30 seconds, view estimated arrival times, and check seat availability using YOLO model sensors.</li>
+                    <li><strong>Smart Booking:</strong> Reserve seats for midnight services or peak hours, with real-time status updates and cancellation options to avoid overcrowding.</li>
+                    <li><strong>QR Code Stop Notification:</strong> Scan a QR code inside the minibus to send a digital "Get Off" request, reducing communication barriers for tourists and special needs passengers.</li>
+                    <li><strong>Lost Item Reporting:</strong> Report lost items with details and photos, track case status, and receive automated matching notifications for found items.</li>
+                    <li><strong>Feedback and Driver Rating:</strong> Submit anonymous ratings and comments on driver performance, cleanliness, and punctuality to improve service quality.</li>
+                    <li><strong>Multilingual Support:</strong> Access the app in English, Traditional Chinese, or Simplified Chinese for an inclusive user experience.</li>
+                    <li><strong>Data Analytics for Operators:</strong> Provides minibus companies with passenger behavior analytics, driver performance metrics, and service quality reports for operational efficiency.</li>
+                </ul>
+            </section>
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <p><strong>Q: How accurate is the real-time tracking feature?</strong></p>
+                <p>A: The app updates minibus locations every 30 seconds using GPS, though accuracy may vary in areas with poor network coverage or during adverse weather conditions.</p>
+                <p><strong>Q: Can I use the app offline?</strong></p>
+                <p>A: Some features, like saved routes, are available offline, but real-time tracking and booking require an internet connection.</p>
+                <p><strong>Q: How do I report a lost item?</strong></p>
+                <p>A: Navigate to the “Lost Item Reporting” section, enter details like item description, travel date, and vehicle number, and upload photos if available. You’ll receive a reference number to track your case.</p>
+                <p><strong>Q: Is the app accessible for passengers with special needs?</strong></p>
+                <p>A: Yes, the app includes a digital stop request feature via QR code scanning and multilingual support to assist passengers with speech or hearing impairments and non-local users.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>For support or inquiries, reach out to the project team:</p>
+                <ul>
+                    <li>Email: minibus.app@hkive.edu.hk</li>
+                    <li>Phone: +852 1234 5678</li>
+                    <li>Website: www.minibusapp.hkive.edu.hk</li>
+                    <li>Supervisor: Cheng Pok Hong (chengph@hkive.edu.hk)</li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer">
+            <p>© 2025 MinibusAppTeam. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
